@@ -28,6 +28,16 @@
 - Total folder size: **< 1 MB** (well under the 100 MB hard limit).
 - The Jupyter Notebook runs end-to-end and reproduces the `corpus.csv` file exactly.
 
-## Notes
-This assignment follows the workflow demonstrated in the official lab notebook:  
-[https://github.com/yevgenm/corpus-analysis-spacy](https://github.com/yevgenm/corpus-analysis-spacy)
+## Corpus Provenance and Tools
+
+### Source of the Documents
+The 15 texts in this corpus are personal letters originally written (or recieved) by hand and later typed by the Chilean architect and photographer **Luis Mitrovic Balbontín** (1911–2008). These documents form part of a private archival collection preserved by me. Only letters written in English were selected for inclusion in this corpus.
+
+### Digitization and Preparation Process
+- The original physical documents were digitized using optical character recognition (OCR).
+- OCR was performed using **Qwen3-Max**, which enabled accurate transcription of typed and handwritten passages.
+- Transcribed texts were initially organized in an Excel spreadsheet to associate each document with its metadata (e.g., filename, date, recipient).
+- Full letter contents were then extracted and saved as individual plain-text files (`.txt`) in the `data/` directory to form the final corpus.
+
+### Code Adaptation and Assistance
+The Jupyter Notebook code for preprocessing and linguistic annotation was developed with the assistance of **Qwen3-Max**, which helped adapt the workflow from the [spaCy corpus analysis lab](https://github.com/yevgenm/corpus-analysis-spacy) to this specific dataset. All processing steps, including tokenization, lemmatization, part-of-speech tagging, and named entity recognition, were executed using spaCy’s `en_core_web_sm` pipeline, as described in this README.
