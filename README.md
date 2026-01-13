@@ -8,7 +8,6 @@ This corpus consists of 15 English-language personal letters from the private ar
 - OCR was performed using **Qwen3-Max**, which enabled accurate transcription of typed and handwritten passages.
 - Transcribed texts were initially organized in an Excel spreadsheet to associate each document with its metadata (e.g., filename, date, recipient).
 - Full letter contents were then extracted and saved as individual plain-text files (`.txt`) in the `data/` directory to form the final corpus.
-- 
 ## Target Audience and Intended Use
 This corpus is intended for:
 - **Linguistic researchers** studying historical epistolary English and personal correspondence patterns
@@ -42,8 +41,8 @@ This corpus is intended for:
 
 ## Quality Checks
 - All 15 text files are readable and non-empty.
-- Total token count: **12,948** (slightly above the recommended 10,000-token limit, but retained to maintain genre diversity).
-- Total folder size: **< 1 MB** (well under the 100 MB hard limit).
+- Total token count: **12,948** 
+- Total folder size: **< 1 MB** 
 - The Jupyter Notebook runs end-to-end and reproduces the `corpus.csv` file exactly.
 
 ### Code Adaptation and Assistance
