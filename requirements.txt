@@ -1,0 +1,21 @@
+# Core dependencies for NLP Corpus Processing
+# Install with: pip install -r requirements.txt
+
+# Data processing
+pandas>=1.5.0
+
+# NLP library
+spacy>=3.0.0
+
+# Visualization
+plotly>=5.0.0
+
+# Jupyter support (optional, for running notebook)
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Additional utilities
+numpy>=1.21.0
+
+# Note: After installing spacy, you need to download the language model:
+# python -m spacy download en_core_web_sm
